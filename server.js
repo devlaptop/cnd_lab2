@@ -12,9 +12,8 @@ function convertToCaps(str) {
 app.get('/', function(req,res) {
 
         console.log('Server got a request");
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-          res.write('This is a test\n');
-      res.end();
+	
+          res.end('This is a test');
 });
 
 app.post('/api/capitalise', function(req, res) {
