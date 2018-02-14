@@ -11,7 +11,6 @@ function convertToCaps(str) {
 
 app.get('/', function(req,res) {
 
-        console.log('Server got a request");
 	
           res.end('This is a test');
 });
