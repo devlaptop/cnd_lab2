@@ -10,7 +10,10 @@ function convertToCaps(str) {
 }
 
 app.get('/', function(req,res) {
-    res.send('Hello Cloud Native Developers!');
+
+	res.writeHead(200, {'Content-Type': 'text/plain'});
+          res.write('This is a test\n');
+      res.end();
 });
 
 app.post('/api/capitalise', function(req, res) {
